@@ -1,4 +1,4 @@
-# 🎓 HR Interview Agent with Voice — Yahya KROMBI
+# HR Interview Agent with Voice 
 
 This project is an intelligent HR agent that conducts job interviews with candidates, combining GPT-4o, Whisper (speech-to-text), and MeloTTS (text-to-speech) in a Streamlit interface.
 Whisper may sometimes not pick up the best words from the audio, so it is better to talk clear into the mic, and also in english if possible XD.
@@ -75,9 +75,9 @@ streamlit run test_app_novoice/app.py
 
 ## Authors
 
-- **Name:** Yahya KROMBI,  Ghaya, Wijdane, Adil
+- **Name:** Yahya KROMBI,  Ghaya_El_Mouna BEDOUI, Wijdane EL MOUHTADI, Adil OUSSIDI
 - **Project:** MSBDE AI Project — Multimodal HR Agent  
-- **Professor:** Martin
+- **Professor:** PRILLARD Martin
 
 ---
 
