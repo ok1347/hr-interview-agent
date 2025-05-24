@@ -90,7 +90,7 @@ streamlit run test_app_novoice/app.py
 ```
 
 
-We provided you with a cv and an offer to test in the file cv_offer_to_test_with
+We provided you with a cv and an offer to test in the file cv_offer_to_test_with, as well as a video demo for the application.
 
 ## Notes
 
