@@ -2,6 +2,36 @@
 
 This project is an intelligent HR agent that conducts job interviews with candidates, combining GPT-4o, Whisper (speech-to-text), and MeloTTS (text-to-speech) in a Streamlit interface.
 Whisper may sometimes not pick up the best words from the audio, so it is better to talk clear into the mic, and also in english if possible XD.
+We used MeloTTS fo text-to-speech because it is light and gives a bit more natural voice to the HR agent. You can read about the model in this hugging face page : https://huggingface.co/myshell-ai/MeloTTS-English
+We also decided to use Whisper with api key, because Whisper local didn't give us the best results, but if you have a good gpu you can always download the model. But since we are already using gpt-4o as our LLM, we figured it is better to use Whisper model for ASR (Automatic Speech Recognition) as an api
+We also provided an alternative for whisper, you can write down what you want to say to our HR agent and continue with the process.
+
+## Project Lifecycle :
+
+Here is the architecture of our project : 
+
+Upload CV + Job Offer  
+     │  
+     ▼  
+Start Interview Session  
+     │  
+     ▼  
+Candidate Asks a Question (voice input or text) 
+     │  
+     ├──► Whisper (if voice input)  
+     │           │  
+     │           ▼  
+     └──────► Transcribed Text  
+                 │  
+                 ▼  
+GPT-4o (Uses CV + Offer as context)  
+     │  
+     ▼  
+MeloTTS (Text-to-Speech synthesis)  
+     │  
+     ▼  
+Audio Answer Played to Candidate
+
 
 ## Features
 
